@@ -1,0 +1,25 @@
+{% extends "index.html" %}
+
+{% block content %}
+<main class="w3-container">
+
+    <div class="w3-panel textimage">
+        <img alt="img" src="/img/einigkeit1910.jpg"/>
+        <div>
+            <h2>Gründung</h2>
+            <p>Das älteste bisher bekannte Bild des Arbeiter-Radfahrer-Vereins „Einigkeit“ in Lehengericht um 1910. Der siebte von links ist Johann Georg Arnold (1886-1977), Gründer und erster Vorsitzender.</p>
+        </div>
+    </div>
+
+   <div class="w3-panel titletextimage">
+        <h2>Satzung</h2>
+        <div>
+            <div>
+                <p>Die aktuelle <em>Satzung</em> des RKV wurde in den 80er Jahren festgelegt und kann hier als PDF heruntergeladen werden.</p>
+            </div>
+            <a class="w3-round w3-large albatros-download-button" href="{{ get_url(path='/doc/satzung/satzung.pdf') }}"><i class="fa fa-cloud-download"></i> Satzung des RKV</a>
+        </div>
+    </div>
+
+</main>
+{% endblock content %}

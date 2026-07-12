@@ -1,0 +1,56 @@
+{% extends "index.html" %}
+
+{# zola thinks that sections do not have taxonomies, so I have to put it myself #}
+{%- block keywords -%}
+    <meta name="keywords" content="Duniter, Libre Money, Ğ1, currency, cryptocurrency, blockchain">
+{%- endblock keywords -%}
+
+{% block content %}
+<main class="w3-container">
+
+    <div class="w3-panel textimage">
+        <img alt="img" src="/img/logo.png"/>
+        <div>
+            <h1>Herzlich Willkommen</h1>
+            <p>Auf der Webseite des Rad- und Kraftfahrverein Lehengericht e.V.</p>
+        </div>
+    </div>
+
+    <div class="w3-panel titletextimage">
+        <h2>Aktuelles</h2>
+        <div>
+            <div>
+                <h3>Generalversammlung am Mi. 05.08.2026</h3>
+                <p>Der RKV lädt am Mittwoch den 05.08.2026 ab 19:00 Uhr zur Generalversammlung in die Gemeindehalle ein. Alle Mitglieder sind herzlich willkommen.</p>
+                <u>Tagesordnung:</u>
+                <ol>
+                    <li>Eröffnung und Begrüßung</li>
+                    <li>Bekanntgabe der Tagesordnung</li>
+                    <li>Gedenken an verstorbene Mitglieder</li>
+                    <li>Berichte der Vorstandschaft</li>
+                    <ol>
+                        <li>1. Vorsitzender</li>
+                        <li>Schriftführerin</li>
+                        <li>Kassier</li>
+                        <li>Kassenprüfer</li>
+                    </ol>
+                    <li>Entlastung der Vorstandschaft</li>
+                    <li>Satzungsänderung</li>
+                    <li>Neuwahlen</li>
+                    <li>Beitragsanpassung</li>
+                    <li>Ehrungen</li>
+                    <li>Grußworte der Gäste</li>
+                    <li>Vorschau</li>
+                    <li>Wünsche und Anträge</li>
+                </ol>
+                <p>Bei der diesjährigen Generalversammlung sticht insbesondere ein Punkt heraus: Die Satzungsänderung. Um den Mitgliedern schon im Voraus die Möglichkeit zu geben, sich mit der neuen Satzung vertraut zu machen, kann der Entwurf hier heruntergeladen werden. Bitte beachtet, dass dies nicht die final gültige Version ist, da die neue Satzung erst in Kraft treten kann wenn das Amtsgericht sie absegnet. Von daher kann es, selbst nach der Generalversammlung, noch zu kleineren administrativen Anpassungen kommen.</p>
+                <p>Als Vergleich kann man die alte Satzung auch hier herunterladen.</p>
+                <a class="w3-round w3-large albatros-download-button" href="{{ get_url(path='/doc/satzung/neu_entwurf_v01.pdf') }}"><i class="fa fa-cloud-download"></i> Neuer Satzungsentwurf</a>
+                <a class="w3-round w3-large albatros-download-button" href="{{ get_url(path='/doc/satzung/satzung.pdf') }}"><i class="fa fa-cloud-download"></i> Aktuelle Satzung</a>
+            </div>
+            <img alt="img" src="/img/wheel.png"/>
+        </div>
+    </div>
+
+</main>
+{% endblock content %}

@@ -1,0 +1,49 @@
+# The URL the site will be built for
+base_url = "https://www.rkv-lehengericht.de"
+description = "Webseite des Rad- und Kraftfahrverein Lehengericht e.V."
+default_language = "de"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+theme = "albatros"
+
+[markdown]
+
+[markdown.highlighting]
+theme = "catppuccin-mocha"
+
+[extra]
+# Put all your custom variables here
+name = "RKV Lehengericht e.V."
+logo = "/img/logo.png"
+# content source is used to link to source files
+content_source = "https://github.com/dowe/zola_rkv/-/tree/master/content/"
+flag = "🇩🇪"
+
+# customize navigation links
+[extra.nav.links]
+left = [
+    "verein.md",
+    #"vorstandschaft.md",
+    #"chronik.md",
+]
+right = [
+    "datenschutz.md",
+    "impressum.md",
+]
+
+# the following links will appear in nav menu
+[[extra.nav.link]]
+name = "Homepage der Stadt Schiltach"
+url = "https://www.schiltach.de/"
+img = "/img/logo.png"
+
+# links to translated version of the site
+[extra.translations.de]
+base_url = "https://www.rkv-lehengericht.de"
+flag = "🇩🇪"
+

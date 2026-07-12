@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+
+{% block content %}
+<main class="w3-container">
+
+
+<div class="w3-panel titletextimage" style="padding-top: 7%">
+    <h1>Datenschutz</h1>
+    <p>Da der Verein personenbezogene Daten zur Mitglieder- und Beitragsverwaltung speichert und verarbeitet gilt die <em>Informationspflicht bei Erhebung von personenbezogenen Daten</em> gemäß Art. 13 DS-GVO.</p>
+    <p>Die vereinsspezifischen Informationen werden in dem folgenden PDF zusammengefasst (dieses wird auch bei Neuanmeldung im Verein zur Verfügung gestellt):</p>
+    <a class="w3-round w3-large albatros-download-button" href="{{ get_url(path='/doc/dsgvo/Infoblatt_Mitglieder.pdf') }}"><i class="fa fa-cloud-download"></i> RKV Infoblatt DS-GVO</a>
+
+</div>
+
+
+</main>
+{% endblock content %}

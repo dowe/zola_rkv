@@ -1,0 +1,25 @@
+<footer class="w3-cell-row">
+  <div class="w3-container w3-cell w3-mobile" role="search">
+      <span class="false_h4">Auf Seite suchen</span>
+      <input id="footersearch" type="search" class="search-query search_input" placeholder="Suchen...">
+      <script>
+        /// CUSTOM DIRTY CODE TO GO TO SEARCH PAGE
+        var $footerSearch = document.getElementById("footersearch");
+        $footerSearch.addEventListener("keyup", function(k) {
+            if (k.code == 'Enter') {
+                var $footerSearch = document.getElementById("footersearch");
+                var footerSearchString = $footerSearch.value;
+                console.log("pressed enter")
+                document.location.href = "{{ get_url(path='@/search.md') | safe }}?s=" + footerSearchString;
+            }
+        });
+      </script>
+  </div>
+
+  <div class="w3-container w3-cell w3-mobile">
+      <ul>
+          <li><a href="{{ get_url(path='@/impressum.md') }}">Impresssum</a></li>
+      </ul>
+  </div>
+
+</footer>
