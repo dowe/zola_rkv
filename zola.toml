@@ -29,7 +29,6 @@ flag = "🇩🇪"
 left = [
     "verein.md",
     #"vorstandschaft.md",
-    #"chronik.md",
 ]
 right = [
     "datenschutz.md",
